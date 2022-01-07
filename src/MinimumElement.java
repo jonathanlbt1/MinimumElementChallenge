@@ -11,13 +11,14 @@ public class MinimumElement {
         int[] newArray = readElements(myInteger);
         System.out.println("My newArray is " + Arrays.toString(newArray));
 
-        System.out.println("The minimum value of my array is " + findMin(newArray));
+        System.out.println("The minimum value in my array is " + findMin(newArray));
     }
-    
+
 
     private static int readInteger(){
 
         Scanner sc = new Scanner (System.in);
+        System.out.println("Enter number: ");
 
         return sc.nextInt();
 
@@ -29,6 +30,7 @@ public class MinimumElement {
 
         int[] array = new int[number];
         for(int i=0; i < array.length; i++) {
+            System.out.println("Enter number: ");
             array[i] = sc.nextInt();
         }
         return array;
